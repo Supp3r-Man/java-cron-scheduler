@@ -229,7 +229,7 @@ Reproduce: `python scripts/mutation_check.py` (set `MVN` to the full path of `mv
 - Very large clock jumps on very frequent jobs are processed occurrence by occurrence (a per-second job and a one-day jump
   is 86 400 iterations, tested; a one-year jump would be about 31 million and slow).
 - A clock that goes backwards is not supported (`ManualClock` refuses; with a real clock the job simply waits to catch up).
-- CI: the workflow is included; CI not yet confirmed. (It runs `mvn -q -B verify` and the demo on Java 17 and 21.)
+- CI: the workflow is included. CI ran green on the first run on GitHub Actions (Java 17 and 21, ubuntu-latest, 2026-10-20). (It runs `mvn -q -B verify` and the demo on Java 17 and 21.)
 
 ## Layout
 
